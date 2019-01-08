@@ -1,4 +1,9 @@
 # Exercise 3: Adding Files to the Index
+#
+#
+#
+#
+#
 
 class Compute:
     def __init__(self, operator, operands):

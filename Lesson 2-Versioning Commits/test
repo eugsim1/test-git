@@ -27,6 +27,15 @@ git push origin ft-add-encapsulating-class
 git checkout -b ft-support-multiplication-arithmetic
 
 
+git diff ft-support-multiplication-arithmetic..ft-add-encapsulating-class
+git push origin ft-support-multiplication-arithmetic
+
+
+git checkout -b ft-support-subtraction-arithmetic
+
+git add --patch exercise_3_step5.py
+
+
 
 git remote add origin https://simoseugene@yahoo.com:Toula142313@github.com/eugsim1/React16.git
 git push -u origin master
