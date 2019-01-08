@@ -40,5 +40,16 @@ echo '# Scientific arithmetic module' > file1
 git add file1
 git commit -m 5
 git status
-
+git rm file1
+git status
+git commit
+git status
+echo '# Scientific arithmetic module' > file1
+git add file1 && git commit -m 5
+git mv file1 file2
+git commit -m rename
+mkdir advanced
+git mv file2 advanced/
+git commit -m 7
+git rebase -i HEAD~4
 
