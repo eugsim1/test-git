@@ -21,7 +21,10 @@ git push -u origin master
 git branch ft-add-encapsulating-class
 git checkout ft-add-encapsulating-class
 echo '.DS_Store' > .gitignore
-
+git add .gitignore
+git commit -m 2
+git push origin ft-add-encapsulating-class
+git checkout -b ft-support-multiplication-arithmetic
 
 
 
