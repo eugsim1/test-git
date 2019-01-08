@@ -10,8 +10,17 @@ ssh-add -l
 
 ssh -T git@github.com
 
-git remote add origin git@github.com:eugsim1/test-git.git
 
+
+git init
+git remote add origin git@github.com:eugsim1/test-git.git
+git add .
+git push -u origin master
+
+
+git branch ft-add-encapsulating-class
+git checkout ft-add-encapsulating-class
+echo '.DS_Store' > .gitignore
 
 
 
