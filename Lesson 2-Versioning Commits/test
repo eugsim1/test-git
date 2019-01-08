@@ -34,8 +34,11 @@ git push origin ft-support-multiplication-arithmetic
 git checkout -b ft-support-subtraction-arithmetic
 
 git add --patch exercise_3_step5.py
+git commit -m 4
+git push origin ft-support-subtraction-arithmetic
+echo '# Scientific arithmetic module' > file1
+git add file1
+git commit -m 5
+git status
 
 
-
-git remote add origin https://simoseugene@yahoo.com:Toula142313@github.com/eugsim1/React16.git
-git push -u origin master
