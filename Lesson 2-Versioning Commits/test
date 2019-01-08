@@ -1,0 +1,20 @@
+git config --global user.name eugsim1
+git config --global user.email simoseugene@yahoo.com
+git config --global --list
+
+ssh-keygen -t rsa -b 4096 -C "simoseugene@yahoo.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+ssh-add -l
+
+
+ssh -T git@github.com
+
+git remote add origin git@github.com:eugsim1/test-git.git
+
+
+
+
+
+git remote add origin https://simoseugene@yahoo.com:Toula142313@github.com/eugsim1/React16.git
+git push -u origin master
