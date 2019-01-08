@@ -53,3 +53,64 @@ git mv file2 advanced/
 git commit -m 7
 git rebase -i HEAD~4
 
+###
+cd  ../..
+mkdir remote-demo
+cd remote-demo
+git init
+git remote
+git remote add origin git@github.com:eugsim1/remote-demo.git
+git remote -v
+git remote rename origin source-truth
+echo "# remote-demo" >> README.md
+git add README.md
+git commit -m "Initial commit"
+git push -u source-truth master
+git remote show source-truth
+git remote remove source-truth
+
+
+
+git checkout master
+git checkout -b ft-new-carousel
+git checkout master
+echo "\n This is a sample repository" >> README.md
+git add README.md
+git commit -m 1
+git remote add origin git@github.com:eugsim1/remote-demo.git
+git remote -v
+git push origin master
+git checkout ft-new-carousel
+git fetch origin master
+git diff ft-new-carousel origin/master
+git merge origin/master
+
+
+git checkout master
+git fetch origin
+git reset --hard origin/master
+
+git checkout master
+git checkout -b ft-support-division-arithmeticls
+
+
+git log --oneline -n 2
+git revert --edit 8d53162
+
+
+### clono
+
+
+git clone "git_repo"
+git remote show orignin
+git checkout master
+git log origin/master...HEAD
+git log --reverse
+git checkout 
+
+git branch my-branch
+git push origin my-branch
+git tag "ddddd"
+git show "tag"
+git push origin --tags
+
